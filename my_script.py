@@ -23,7 +23,7 @@ def commit_and_push_changes(repo_path, commit_message="Automatic commit"):
     origin = repo.remote(name='origin')
     origin.push()
 
-def start_chat(user_input, headless=False, chrome_driver_path):
+def start_chat(user_input, chrome_driver_path, headless=False): # 인자 순서 변경
     chrome_options = webdriver.ChromeOptions()
     if headless:
         chrome_options.add_argument("--headless")
