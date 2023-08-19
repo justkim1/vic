@@ -1,3 +1,5 @@
+import os
+os.environ["GIT_PYTHON_GIT_EXECUTABLE"] = "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git"
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
